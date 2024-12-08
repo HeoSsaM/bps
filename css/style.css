@@ -1,0 +1,369 @@
+@import url(variable.css);
+@import url(base.css);
+@import url(responsive.css);
+@import url(reset.css);
+
+
+* {
+    font-weight: 400;
+}
+
+.top_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    height: 300px;
+    background: url(../img/img_mainTop.png) no-repeat center/cover;
+}
+
+.top_header .top_nav_area {
+    position: absolute;
+    top: 24px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 20px 0;
+}
+
+.top_header .top_nav_area .store_link_area {
+    position: relative;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.top_header .top_nav_area .store_link_area>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 187px;
+    height: 20px;
+    background: url(../img/ico_listDown.png) no-repeat right center;
+    font-size: var(--font-size-m);
+}
+
+.top_header .top_nav_area .store_link_area>.store_link_group {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 187px;
+    color: var(--color-gray-d);
+    display: none;
+}
+
+.top_header .top_nav_area .store_link_area>.store_link_group>li {
+    margin-bottom: 3px;
+    font-size: var(--font-size-m);
+}
+
+/* top_searh-area */
+.search_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.search_area>p {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.search_area .search_input {
+    position: relative;
+    width: 640px;
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+.search_area .search_input::before,
+.search_area .search_input::after {
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    background: url(../img/ico_search_ai.png) no-repeat center;
+    width: 37px;
+    height: 33px;
+    content: '';
+    z-index: 3;
+}
+
+.search_area .search_input::after {
+    top: 12px;
+    left: auto;
+    right: 20px;
+    background-image: url(../img/Cash-Search--Streamline-Ultimate.png);
+}
+
+.search_area .search_input>input {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: color(--color-white);
+    border: 3px solid #30E39E;
+    z-index: 1;
+}
+
+.search_area .search_input>input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding-left: 70px;
+    color: var(--color-gray-8);
+}
+
+.search_area .tag_area {
+    display: flex;
+    width: 320px;
+    height: 32px;
+}
+
+.search_area .tag_area>a {
+    flex: 1;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+.search_area .tag_area>a>span {
+    color: #20CB89;
+}
+
+/* widjet 영역 */
+.widjet_area {
+    display: flex;
+    justify-content: space-between;
+    background: #F2F6F5;
+    padding: 20px;
+}
+
+.widjet_area>div {
+    width: 32.5%;
+    height: auto;
+}
+
+.widget {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px #0000000F;
+    border-radius: 20px;
+    border: 1px solid #EFEFEF;
+    letter-spacing: -1px;
+}
+
+.widget img {
+    display: inline-block;
+    vertical-align: -3px;
+}
+
+.widget .plus {
+    color: #E02B22;
+}
+
+.widget .minus img {
+    color: #2F5DFD;
+    vertical-align: -1px;
+}
+
+.widget .widget_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.widget .widget_title>h2 {
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 45px;
+    background: no-repeat left center/contain;
+}
+
+.widget .widget_title>span {
+    font-size: 12px;
+    color: #9B9EA3;
+}
+
+.widget_value {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.widget_value>strong {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+
+.widget_details {
+    display: flex;
+    background: #F2F6F5;
+    border-radius: 18px;
+}
+
+.widget_details>div {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    color: #3C4048;
+}
+
+
+.widget_details>div+div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 75px;
+    background: #DCDCDC;
+}
+
+.widget_details .detail-item>.item_title {
+    font-size: var(--font-size-sm);
+    color: #3C4048;
+}
+
+.widget_details .detail-item>.item_value {
+    color: #191A1E
+}
+
+.widget_value .value_change {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.detail-item .value_change .value {
+    font-size: var(--font-size-sm);
+}
+
+/* 실시간매출 */
+.widget.sales .widget_title>h2 {
+    background-image: url(../img/ico_money.png);
+}
+
+/* 실시간구매고객 */
+.widget.purchase .widget_title>h2 {
+    background-image: url(../img/ico_smile.png);
+}
+
+/* chatbot_banner */
+.widjet_area > .chatbot_center {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.chatbot_slider {
+    margin-bottom: 20px;
+}
+.chatbot_center {
+    display: flex;
+    justify-content: space-between;
+}
+.chatbot_center>div {
+    width: 48.5%;
+    height: 142px;
+    border: 1px solid #EFEFEF;
+    border-radius: 22px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chatbot_center > div > p {
+    font-size: 18px;
+    font-weight: 500;
+}
+/* chatbot_banner-swiper indicater */
+.chatbot_slider {
+    height: 48%; 
+    width: 100%; 
+    max-width: 440px; 
+    margin-bottom: 12px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.chatbot_slider .swiper-slide {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/img_chatbot_banner.png) no-repeat center / cover; /* 비율 유지 및 채움 */
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-white);
+    opacity: 0.2;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+}
+
+@media screen and (min-width: 535px) and (max-width: 768px) {
+    /* widject 영역 */
+    .widjet_area>div {
+        padding: 12px;
+        padding: 10px;
+    }
+    .widget .widget_title>h2 {
+        height: 28px;
+        line-height: 28px;
+        font-size: 13px;
+        padding-left: 28px;
+        letter-spacing: -1px;
+    }
+    .widget .widget_title>span {
+        font-size: 11px;
+    }
+    .widget_value>strong {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .widget_details>div {
+        padding: 10px;
+
+    }
+    .widget_details .detail-item>.item_title {
+        font-size: 13px;
+    }
+    .widget_details .detail-item > .item_value {
+        font-size: 15px;
+    }
+    .value_change {
+        font-size: 12px;
+    }
+    /* chatbotArea */
+    .widjet_area .chatbot_area {
+        padding: 0;
+    }
+    .chatbot_center {
+        display: flex;
+        justify-content: space-between;
+    }
+    .chatbot_center>div {
+        width: 48.5%;
+        border-radius: 15px;
+        height: 110px
+    }
+    .chatbot_slider .swiper-slide {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .chatbot_center > div > p {
+        font-size: 15px;
+    }
+}
