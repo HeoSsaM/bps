@@ -1,0 +1,115 @@
+html {font-size: 14px;}
+body {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* top_header */
+.top_inner .top_nav_area {
+    font-size: 1rem;
+}
+.search_area {
+    margin-top: 5.6rem;
+}
+.search_area>p {
+    font-size: 1.5rem;
+}
+.search_area .search_input {
+    height: 3rem;
+}
+.search_area .search_input>input::placeholder {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1px;
+    padding-left: 4rem;
+    color: var(--color-gray-8);
+}
+.search_area .search_input::before,
+.search_area .search_input::after {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.75rem;
+    background-size: contain;
+}
+
+.search_area .search_input::after {
+    left: auto;
+    right: 20px;
+    background-image: url(../img/Cash-Search--Streamline-Ultimate.png);
+}
+
+/* widject 영역 */
+.widjet_area {
+    padding: 1rem
+}
+.widjet_area>div {
+    height: 15rem;
+    padding: 0.75rem;
+}
+
+.widget .widget_title>h2 {
+    height: 28px;
+    line-height: 28px;
+    font-size: 0.813rem;
+    padding-left: 28px;
+    letter-spacing: -1px;
+}
+
+.widget .widget_title>span {
+    font-size: 0.688rem;
+}
+
+.widget_value>strong {
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.widget_details>div {
+    padding: 10px;
+
+}
+
+.widget_details .detail-item>.item_title {
+    font-size: 0.813rem;
+}
+
+.widget_details .detail-item>.item_value {
+    font-size: 0.938rem;
+}
+
+.value_change {
+    font-size: 0.938rem;
+}
+
+/* chatbotArea */
+.widjet_area .chatbot_area {
+    padding: 0;
+}
+
+.chatbot_center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatbot_slider .swiper-slide {
+    padding: 1.25rem 1rem 2.5rem;
+    background: url(../img/img_chatbot_banner_bg.png) no-repeat center / cover;
+    /* 비율 유지 및 채움 */
+}
+.chatbot_slider .chatbot_icon {
+    width: 15%;
+}
+.chatbot_slider .chatbot_text {
+    margin-left: 1rem;
+}
+
+.chatbot_center>div {
+    width: 48.5%;
+    border-radius: 15px;
+    height: 6.875rem
+}
+.chatbot_center>div>p {
+    font-size: 0.938rem;
+}
+
+/*  */

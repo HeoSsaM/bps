@@ -8,144 +8,485 @@
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 565px) and (max-width: 960px)">
+    <!-- <link rel="stylesheet" href="css/mobile.css" media="(min-width: 535px) and (max-width: 768px)"> -->
+
 </head>
 
 <body>
     <div id="wrapper">
         <div class="top_header">
-            <div class="top_nav_area">
-                <div class="store_link_area">
-                    <a href="javascript:;" class="store_link">브루클린트레일러 연남점 <span></span></a>
-                    <ul class="store_link_group">
-                        <li>브루클린트레일러 연남점</li>
-                        <li>브루클린트레일러 연남점</li>
-                        <li>브루클린트레일러 연남점</li>
-                    </ul>
+            <div class="top_inner">
+                <div class="top_nav_area">
+                    <div class="store_link_area">
+                        <a href="javascript:;" class="store_link">브루클린트레일러 연남점 <span><img src="img/ico_listDown.png"
+                                    alt=""></span></a>
+                        <ul class="store_link_group">
+                            <li>브루클린트레일러 연남점</li>
+                            <li>브루클린트레일러 연남점</li>
+                            <li>브루클린트레일러 연남점</li>
+                        </ul>
+                    </div>
+                    <a href="javascript:;" class="btn_menu"><img src="img/btn_menu.png" alt="전체보기"></a>
                 </div>
-                <a href="javascript:;" class="btn_menu"><img src="img/btn_menu.png" alt="전체보기"></a>
-            </div>
-            <div class="search_area">
-                <p>우리 매장 궁금한 내용을 입력해보세요!</p>
-                <div class="search_input">
-                    <input type="text" placeholder="필요한 것을 입력해보세요! 무엇이든 척척 BPS입니다.">
-                </div>
-                <div class="tag_area">
-                    <a href="#"><span>#</span> 레시피</a>
-                    <a href="#"><span>#</span> 레시피</a>
-                    <a href="#"><span>#</span> 레시피</a>
-                    <a href="#"><span>#</span> 레시피</a>
+                <div class="search_area">
+                    <p>우리 매장 궁금한 내용을 입력해보세요!</p>
+                    <div class="search_input">
+                        <input type="text" placeholder="필요한 것을 입력해보세요! 무엇이든 척척 BPS입니다.">
+                    </div>
+                    <div class="tag_area">
+                        <a href="#"><span>#</span> 레시피</a>
+                        <a href="#"><span>#</span> 레시피</a>
+                        <a href="#"><span>#</span> 레시피</a>
+                        <a href="#"><span>#</span> 레시피</a>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- //top_header -->
 
-        <div class="widjet_area">
-            <div class="widget sales">
-                <div class="widget_title">
-                    <h2>실시간매출</h2>
-                    <span>Last Updated 11:00PM</span>
+        <div class="container">
+            <div class="row01">
+                <div class="card sec_real_sales">
+                    <a href="">
+                        <div class="card_title">
+                            <h2><img src="img/ico_money.png" alt="">실시간매출</h2>
+                            <span>Last Updated 11:00PM</span>
+                        </div>
+                        <div class="card_value">
+                            <strong>2,400,000원</strong>
+                            <p class="value_change">
+                                <span><img src="img/ico_up.png" alt="증가"></span>
+                                <span class="value plus">300,000</span>
+                            </p>
+                        </div>
+                        <div class="card_details">
+                            <div class="detail-item">
+                                <p class="item_title">홀</p>
+                                <p class="item_value">1,440,000원</p>
+                                <p class="value_change">
+                                    <span><img src="img/ico_up.png" alt="증가"></span>
+                                    <span class="value plus">300,000원</span>
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <p class="item_title">배달</p>
+                                <p class="item_value">960,000원</p>
+                                <p class="value_change minus">
+                                    <span><img src="img/ico_down.png" alt="감소"></span>
+                                    <span class="value minus">300,000원</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="widget_value">
-                    <strong>2,400,000원</strong>
-                    <p class="value_change">
-                        <span><img src="img/ico_up.png" alt="증가"></span>
-                        <span class="value plus">300,000</span>
-                    </p>
+                <!-- //sales_area -->
+                <div class="card sec_customers">
+                    <a href="">
+                        <div class="card_title">
+                            <h2><img src="img/ico_smile.png" alt="">실시간구매고객</h2>
+                            <span>Last Updated 11:00PM</span>
+                        </div>
+                        <div class="card_value">
+                            <strong>200명</strong>
+                            <p class="value_change">
+                                <span><img src="img/ico_up.png" alt="증가"></span>
+                                <span class="value plus">20명</span>
+                            </p>
+                        </div>
+                        <div class="card_details">
+                            <div class="detail-item">
+                                <p class="item_title">홀</p>
+                                <p class="item_value">120명</p>
+                                <p class="value_change">
+                                    <span><img src="img/ico_up.png" alt="증가"></span>
+                                    <span class="value plus">5명</span>
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <p class="item_title">배달</p>
+                                <p class="item_value">80명</p>
+                                <p class="value_change">
+                                    <span><img src="img/ico_up.png" alt="증가"></span>
+                                    <span class="value plus">5명</span>
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <p class="item_title">유동인구</p>
+                                <p class="item_value">7,200명</p>
+                                <p class="value_change minus">
+                                    <span><img src="img/ico_down.png" alt="감소"></span>
+                                    <span class="value minus">110명</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="widget_details">
-                    <div class="detail-item">
-                        <p class="item_title">홀</p>
-                        <p class="item_value">1,440,000원</p>
-                        <p class="value_change">
-                            <span><img src="img/ico_up.png" alt="증가"></span>
-                            <span class="value plus">300,000</span>
-                        </p>
+                <!-- //purchase_area -->
+                <div class="card sec_support">
+                    <div class="swiper chatbot_slider">
+                        <!-- 슬라이드 1 -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="chatbot_icon">
+                                    <img src="img/ico_chatbot.png" alt="">
+                                </div>
+                                <div class="chatbot_text">
+                                    <p>어제는 지금 이시간 칠리버거가<br>가장 많이 팔렸어요.<br>레시피를 보여드릴까요?</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="chatbot_icon">
+                                    <img src="img/ico_chatbot.png" alt="">
+                                </div>
+                                <div class="chatbot_text">
+                                    <p>어제는 지금 이시간 칠리버거가<br>가장 많이 팔렸어요.<br>레시피를 보여드릴까요?</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="chatbot_icon">
+                                    <img src="img/ico_chatbot.png" alt="">
+                                </div>
+                                <div class="chatbot_text">
+                                    <p>어제는 지금 이시간 칠리버거가<br>가장 많이 팔렸어요.<br>레시피를 보여드릴까요?</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="chatbot_icon">
+                                    <img src="img/ico_chatbot.png" alt="">
+                                </div>
+                                <div class="chatbot_text">
+                                    <p>어제는 지금 이시간 칠리버거가<br>가장 많이 팔렸어요.<br>레시피를 보여드릴까요?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="detail-item">
-                        <p class="item_title">배달</p>
-                        <p class="item_value">960,000원</p>
-                        <p class="value_change minus">
-                            <span><img src="img/ico_down.png" alt="감소"></span>
-                            <span class="value minus">300,000</span>
-                        </p>
+                    <div class="support_center">
+                        <div class="edu">
+                            <a href="">
+                                <img src="img/ico_educenter01.png" alt="">
+                                <p>에듀케이션 센터</p>
+                            </a>
+                        </div>
+                        <div class="hr">
+                            <a href="">
+                                <img src="img/ico_educenter_02.png" alt="">
+                                <p>HR 센터</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <!-- //recom_area -->
             </div>
-            <!-- //sales_area -->
 
-            <div class="widget purchase">
-                <div class="widget_title">
-                    <h2>실시간구매고객</h2>
-                    <span>Last Updated 11:00PM</span>
+            <div class="row02">
+                <div class="card sec_ai_ads">
+                    <a href="">
+                        <div class="card_title">
+                            <h2><img src="img/ico_chart.png" alt="">AI광고분석</h2>
+                            <span>Last Updated 11:00PM</span>
+                        </div>
+                        <div class="tab_area">
+                            <ul class="tab_menu">
+                                <li class="on">전체</li>
+                                <li>온라인</li>
+                                <li>오프라인</li>
+                            </ul>
+                            <div class="tab_contents all">
+                                <div class="card_value">
+                                    <strong>235%</strong>
+                                    <p class="value_change">
+                                        <span><img src="img/ico_up.png" alt="증가"></span>
+                                        <span class="value plus">12.5%</span>
+                                    </p>
+                                </div>
+                                <div class="card_details">
+                                    <div class="detail-item">
+                                        <p class="item_title">광고매출</p>
+                                        <p class="item_value">1,440,000원</p>
+                                        <p class="value_change">
+                                            <span><img src="img/ico_up.png" alt="증가"></span>
+                                            <span class="value plus">300,000원</span>
+                                        </p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <p class="item_title">광고비용</p>
+                                        <p class="item_value">960,000원</p>
+                                        <p class="value_change plus">
+                                            <span><img src="img/ico_up.png" alt="증가"></span>
+                                            <span class="value plus">300,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //tab_contents_all -->
+                            <!-- <div class="tab_contents online">
+                                <div class="card_value">
+                                    <strong>235%</strong>
+                                    <p class="value_change">
+                                        <span><img src="img/ico_up.png" alt="증가"></span>
+                                        <span class="value plus">12.5%</span>
+                                    </p>
+                                </div>
+                                <div class="card_details">
+                                    <div class="detail-item">
+                                        <p class="item_title">광고매출</p>
+                                        <p class="item_value">1,440,000원</p>
+                                        <p class="value_change">
+                                            <span><img src="img/ico_up.png" alt="증가"></span>
+                                            <span class="value plus">300,000원</span>
+                                        </p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <p class="item_title">광고비용</p>
+                                        <p class="item_value">960,000원</p>
+                                        <p class="value_change minus">
+                                            <span><img src="img/ico_up.png" alt="증가"></span>
+                                            <span class="value minus">300,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- //tab_contents 온라인 -->
+
+                            <!-- <div class="tab_contents offline">
+                                <div class="card_value">
+                                    <strong>235%</strong>
+                                    <p class="value_change">
+                                        <span><img src="img/ico_up.png" alt="증가"></span>
+                                        <span class="value plus">12.5%</span>
+                                    </p>
+                                </div>
+                                <div class="card_details">
+                                    <div class="detail-item">
+                                        <p class="item_title">광고매출</p>
+                                        <p class="item_value">1,440,000원</p>
+                                        <p class="value_change">
+                                            <span><img src="img/ico_up.png" alt="증가"></span>
+                                            <span class="value plus">300,000원</span>
+                                        </p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <p class="item_title">광고비용</p>
+                                        <p class="item_value">960,000원</p>
+                                        <p class="value_change minus">
+                                            <span><img src="img/ico_up.png" alt="증가"></span>
+                                            <span class="value minus">300,000원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- //tab_contents 오프라인 -->
+                        </div>
+                        <!-- //tab area -->
+                    </a>
                 </div>
-                <div class="widget_value">
-                    <strong>200명</strong>
-                    <p class="value_change">
-                        <span><img src="img/ico_up.png" alt="증가"></span>
-                        <span class="value plus">20명</span>
-                    </p>
+                <!-- //ai_ads -->
+
+                <div class="card sec_review_check">
+                    <a href="">
+                        <h2 class="blind">새로운 리뷰 알림</h2>
+                        <ul class="new_review_list">
+                            <li>
+                                <p class="title">리뷰가 감지되었어요!</p>
+                                <p class="text">
+                                    최근 2간 $상품명$의 부정적인 리뷰가 증가하고 있어요! <br>
+                                    리뷰를 확인하고 메뉴를 개선해보아요!
+                                </p>
+                            </li>
+                            <li>
+                                <p class="title">리뷰가 감지되었어요!</p>
+                                <p class="text">
+                                    최근 2간 $상품명$의 부정적인 리뷰가 증가하고 있어요! <br>
+                                    리뷰를 확인하고 메뉴를 개선해보아요!
+                                </p>
+                            </li>
+                            <li>
+                                <p class="title">리뷰가 감지되었어요!</p>
+                                <p class="text">
+                                    최근 2간 $상품명$의 부정적인 리뷰가 증가하고 있어요! <br>
+                                    리뷰를 확인하고 메뉴를 개선해보아요!
+                                </p>
+                            </li>
+                        </ul>
+                    </a>
                 </div>
-                <div class="widget_details">
-                    <div class="detail-item">
-                        <p class="item_title">홀</p>
-                        <p class="item_value">120명</p>
-                        <p class="value_change">
-                            <span><img src="img/ico_up.png" alt="증가"></span>
-                            <span class="value plus">5명</span>
-                        </p>
-                    </div>
-                    <div class="detail-item">
-                        <p class="item_title">배달</p>
-                        <p class="item_value">80명</p>
-                        <p class="value_change">
-                            <span><img src="img/ico_up.png" alt="증가"></span>
-                            <span class="value plus">5명</span>
-                        </p>
-                    </div>
-                    <div class="detail-item">
-                        <p class="item_title">유동인구</p>
-                        <p class="item_value">7,200명</p>
-                        <p class="value_change minus">
-                            <span><img src="img/ico_down.png" alt="감소"></span>
-                            <span class="value minus">110명</span>
-                        </p>
-                    </div>
+                <!-- //review_board -->
+
+                <div class="card sec_best_menu">
+                    <a href="">
+                        <div class="card_title">
+                            <h2><img src="img/ico_best.png" alt="">BEST MENU</h2>
+                            <span>Last Updated 11:00PM</span>
+                        </div>
+                        <div class="tab_area">
+                            <ul class="tab_menu">
+                                <li class="on">오늘</li>
+                                <li>온라인</li>
+                                <li>이번달</li>
+                            </ul>
+                            <div class="tab_contents today">
+                                <ul class="sub_tab_menu">
+                                    <li class="on">판매순위</li>
+                                    <li>홀주문</li>
+                                    <li>배달주문</li>
+                                    <li>포장주문</li>
+                                </ul>
+                                <ul class="sub_tab_contents">
+                                    <li>
+                                        <strong>1</strong>
+                                        <span class="menu">BEF 시그니처 핫도그</span>
+                                        <div>
+                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>2</strong>
+                                        <span class="menu">칠리치즈 핫도그</span>
+                                        <div>
+                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>3</strong>
+                                        <span class="menu">아메리칸 슈림프 치킨</span>
+                                        <div>
+                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>4</strong>
+                                        <span class="menu">치킨 카레 소세지 보울</span>
+                                        <div>
+                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>5</strong>
+                                        <span class="menu">BFT 오리지널 수제버거</span>
+                                        <div>
+                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <!-- //best_menu -->
             </div>
-            <!-- //purchase_area -->
 
-            <div class="chatbot_area">
-                <div class="swiper chatbot_slider">
-                    <!-- 슬라이드 1 -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <p class="slide_text blind">어제는 지금 이시간 칠리버거가 가장 많이 팔렸어요.레시피를 보여드릴까요?</p>
+            <div class="row03">
+                <div class="card sec_review_board">
+                    <a href="">
+                        <div class="card_title">
+                            <h2><img src="img/ico_review.png" alt="">리뷰현황</h2>
+                            <span>Last Updated 11:00PM</span>
                         </div>
-                        <div class="swiper-slide blind">
-                            <p class="slide_text">어제는 지금 이시간 칠리버거가 가장 많이 팔렸어요.레시피를 보여드릴까요?</p>
+                        <div class="card_value">
+                            <strong>144건</strong>
+                            <p class="value_change">
+                                <span><img src="img/ico_up.png" alt="증가"></span>
+                                <span class="value plus">20건</span>
+                            </p>
                         </div>
-                        <div class="swiper-slide blind">
-                            <p class="slide_text">어제는 지금 이시간 칠리버거가 가장 많이 팔렸어요.레시피를 보여드릴까요?</p>
+                        <div class="card_detail_group">
+                            <div class="card_details">
+                                <div class="detail-item">
+                                    <p class="item_title">미답변 리뷰</p>
+                                    <p class="item_value">120건</p>
+                                    <p class="value_change">
+                                        <span><img src="img/ico_up.png" alt="증가"></span>
+                                        <span class="value plus">5건</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card_details">
+                                <div class="detail-item">
+                                    <p class="item_title">별점 2-3개</p>
+                                    <p class="item_value">7건</p>
+                                    <p class="value_change">
+                                        <span><img src="img/ico_up.png" alt="증가"></span>
+                                        <span class="value plus">2건</span>
+                                    </p>
+                                </div>
+                                <div class="detail02">
+                                    <p class="item_title">별점 1개</p>
+                                    <p class="item_value">1건</p>
+                                    <p class="value_change minus">
+                                        <span><img src="img/ico_down.png" alt="감소"></span>
+                                        <span class="value minus">1건</span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="swiper-slide blind">
-                            <p class="slide_text">어제는 지금 이시간 칠리버거가 가장 많이 팔렸어요.레시피를 보여드릴까요?</p>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+                    </a>
                 </div>
-                <div class="chatbot_center">
-                    <div class="edu_center">
-                        <img src="img/ico_educenter01.png" alt="">
-                        <p>에듀케이션 센터</p>
+            <!-- //sec_review_board -->
+            <div class="card sec_sales_cost">
+                <a href="">
+                    <div class="card_title">
+                        <h2><img src="img/ico_chart.png" alt="">매출비용분석</h2>
+                        <span>Last Updated 11:00PM</span>
                     </div>
-                    <div class="hr_center">
-                        <img src="img/ico_educenter_02.png" alt="">
-                        <p>HR 센터</p>
+                    <div class="card_value">
+                        <span>오늘 매출 - 지출 비용</span>
+                        <strong>1,200,000원</strong>
+                        <p class="value_change">
+                            <span class="gray">전주 대비</span>
+                            <span><img src="img/ico_up.png" alt="증가"></span>
+                            <span class="value plus">20명</span>
+                        </p>
                     </div>
-                </div>
-
+                    <div class="card_details">
+                        <div class="detail-item">
+                            <p class="item_title">오프라인</p>
+                            <p class="item_value">200,000원</p>
+                            <p class="value_change">
+                                <span class="gray">전주 대비</span>
+                                <span><img src="img/ico_up.png" alt="증가"></span>
+                                <span class="value plus">300,000원</span>
+                            </p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="item_title">온라인</p>
+                            <p class="item_value">1,000,000원</p>
+                            <p class="value_change minus">
+                                <span class="gray">전주대비</span>
+                                <span><img src="img/ico_down.png" alt="감소"></span>
+                                <span class="value minus">300,000원</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <!-- //recom_area -->
+            <!-- //sales_anal -->
+
+            <div class="card sec_sales_profit">
+                <a href="">
+                    <div class="card_title">
+                        <h2><img src="img/ico_moneybag.png" alt="">매출손익분석</h2>
+                        <!-- <span>Last Updated 11:00PM</span> -->
+                    </div>
+                   
+                    <div class="card_details">
+                        <div class="detail-item">
+                            <p class="item_title">매출</p>
+                            <p class="item_value">99,440,000원</p>                            
+                        </div>
+                        <div class="detail-item">
+                            <p class="item_title">비용</p>
+                            <p class="item_value">1,440,000원</p>                            
+                        </div>
+                        <div class="detail-item">
+                            <p class="item_title">손익</p>
+                            <p class="item_value">99,440,000원</p>                            
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- //sec_sales_profit -->
         </div>
     </div>
     <!-- Swiper JS -->
