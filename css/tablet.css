@@ -1,0 +1,150 @@
+html {font-size: 16px;}
+body {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* top_header */
+.top_header {
+    height: 17.938rem;
+    background: url(../img/img_mainTop.png) no-repeat center/cover;
+}
+.top_inner .top_nav_area {
+    font-size: 1rem;
+}
+.search_area {
+    margin-top: 7.25rem;
+    width: 21.875rem
+}
+.search_area>p {
+    font-size: 1.25rem;
+}
+.search_area .search_input>input.pc {
+    display: none;
+}
+.search_area .search_input>input.mobile {
+    display: block;
+}
+.search_area .search_input {
+    width: 21.87rem;
+    height: 3rem;
+}
+
+/* card layout */
+.container > div {
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.container > div > div {
+    position: static;
+    width: 100%; height: auto;
+    margin-bottom: 1.25rem;
+}
+
+.container>.row02 {
+    height: 23.75rem
+}
+.row02 .sec_best_menu {
+    position: static;
+}
+.row03 .sec_sales_profit {
+    position: static;
+}
+.row02 .sec_ai_ads,
+.row02 .sec_review_check {
+    height: auto
+}
+
+/* 레이아웃 */
+.container>.row02 {
+    height: auto
+}
+/* 챗봇 센터 */
+.chatbot_slider .swiper-slide {
+    height: 8.125rem;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    text-align: right; 
+    left: auto; right: 10px;
+}
+.chatbot_slider .chatbot_text {
+    margin-left: 1.1rem;
+    letter-spacing: -1px;
+}
+.card .support_center {
+    height: auto;
+}
+.card .support_center>div {
+    height: 7.375rem;
+}
+
+/* 리뷰알림 */
+.new_review_list li {
+    padding: 0 1rem 1rem 2.8rem
+}
+.new_review_list li::before {
+    left: 5px;
+}
+.new_review_list li + li {
+    padding-top: 1rem;
+}
+.new_review_list li .title {
+    margin-bottom: 5px;
+}
+.new_review_list li .text {
+    font-size: 0.875rem;
+}
+.detail-item .value_change .value {
+    letter-spacing: -1.2px;
+}
+/* 베스트 메뉴 */
+.sec_best_menu .sub_tab_menu {
+    gap: 3px;
+}
+.sec_best_menu .sub_tab_menu > li {
+    font-size: 12px;
+}
+
+/* 매출손익 */
+.row03 .sec_sales_profit {
+    height: auto;
+}
+.sec_sales_profit .card_details.pc {
+    display: none;
+}
+.sec_sales_profit .card_details.mobile {
+    display: flex;
+    background: none;
+}
+.sec_sales_profit .card_details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;    
+}
+.sec_sales_profit .detail_item {
+    border-radius: 16px;
+    height: 74px;
+    box-sizing: border-box;
+    background: #F2F6F5;
+}
+.sec_sales_profit .card_details>div+div::before {
+    background: none;
+}
+.sec_sales_profit .detail_item:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec_sales_profit .detail_item:last-child > div {
+    width: 50%
+}
+.sec_sales_profit .detail_item:last-child > div::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 50px;
+    background: #DCDCDC;
+}
