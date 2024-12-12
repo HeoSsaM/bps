@@ -95,7 +95,7 @@ body {
 .new_review_list li .text {
     font-size: 0.875rem;
 }
-.detail-item .value_change .value {
+.detail_item .value_change .value {
     letter-spacing: -1.2px;
 }
 /* 베스트 메뉴 */

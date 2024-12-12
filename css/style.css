@@ -169,11 +169,13 @@ body {
     height: 31rem;
     z-index: 3;
 }
-
+.row03 > div {
+    height: auto;
+}
 .row03 .sec_sales_profit {
     position: absolute;
     top: 112px; right: 0;
-    height: 189px
+    height: 11.813rem;
 }
 
 /* card 공통*/
@@ -197,7 +199,6 @@ body {
     float: left;
     width: calc((100% - 30px) / 3);
     margin-right: 15px;
-    height: 100%;
     background: #fff;
     border-radius: 1.25rem;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -274,20 +275,24 @@ body {
     height: 75px;
     background: #DCDCDC;
 }
-.card_details .detail-item>.item_title {
-
+.card_details .detail_item {
     color: #3C4048;
+    font-size: 0.875rem;
 }
-.card_details .detail-item>.item_value {
-    color: #191A1E;
-
+.card_details .detail_item .title {
+    font-size: 0.875rem;
+}
+.card_details .detail_item>.item_value {
+    color: #191A1E;    
+    font-weight: 600;
+    font-size: 1rem;
 }
 .card_value .value_change {
     text-align: center;
     margin-bottom: 8px;
     font-size: 0.938rem;
 }
-.detail-item .value_change .value {
+.detail_item .value_change .value {
     font-size: var(--font-size-sm);
 }
 
@@ -383,19 +388,19 @@ body {
 }
 
 
-
 /* 리뷰 알림 영역 */
 .new_review_list li {
     position: relative;
-    padding: 1.25rem 0 1.25rem 3.3rem;        
+    padding: 0 0 0.625rem 2.4rem;        
 }
 .new_review_list li + li {
+    padding-top: 0.625rem;
     border-top: 1px solid #E7E7EB;
 }
 .new_review_list li::before {
     content: '';
     position: absolute;
-    left: 25px;
+    left: 0;
     width: 18px; 
     height: 28px;
     background: url(../img/ico_review_check.png) no-repeat center/cover;    
@@ -419,7 +424,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
     margin-bottom: 15px;
 }
 .sec_best_menu .sub_tab_menu > li {
@@ -486,6 +491,9 @@ body {
 .sec_sales_cost .card_title {
     margin-bottom: 1.3rem;
 }
+.sec_sales_cost .detail_item {
+    padding: 1.25rem;
+}
 .sec_sales_cost .card_value {
     margin-bottom: 0;
 }
@@ -507,4 +515,21 @@ body {
     font-weight: 600;
     letter-spacing: -0.01em;
     text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .sec_sales_cost .detail_item {
+        padding: 0.938rem 0.5rem; 
+    }
+    .detail_item .value_change .value {
+        font-size: 0.78rem;
+    }
+    
+    .sec_sales_cost .detail_item .value_change {        
+        font-size: 0.78rem;
+    }
+
+    .sec_sales_profit .card_title {
+        margin-bottom: 1.15rem;
+    }
 }
