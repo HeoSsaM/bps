@@ -8,9 +8,7 @@
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 565px) and (max-width: 960px)">
-    <!-- <link rel="stylesheet" href="css/mobile.css" media="(min-width: 535px) and (max-width: 768px)"> -->
-
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width: 768px)">
 </head>
 
 <body>
@@ -19,8 +17,7 @@
             <div class="top_inner">
                 <div class="top_nav_area">
                     <div class="store_link_area">
-                        <a href="javascript:;" class="store_link">브루클린트레일러 연남점 <span><img src="img/ico_listDown.png"
-                                    alt=""></span></a>
+                        <a href="javascript:;" class="store_link">브루클린트레일러 연남점</a>
                         <ul class="store_link_group">
                             <li>브루클린트레일러 연남점</li>
                             <li>브루클린트레일러 연남점</li>
@@ -32,7 +29,8 @@
                 <div class="search_area">
                     <p>우리 매장 궁금한 내용을 입력해보세요!</p>
                     <div class="search_input">
-                        <input type="text" placeholder="필요한 것을 입력해보세요! 무엇이든 척척 BPS입니다.">
+                        <input type="text" placeholder="필요한 것을 입력해보세요! 무엇이든 척척 BPS입니다." class="pc">
+                        <input type="text" placeholder="무엇이든 척척 BPS입니다." class="mobile">
                     </div>
                     <div class="tag_area">
                         <a href="#"><span>#</span> 레시피</a>
@@ -470,18 +468,35 @@
                         <!-- <span>Last Updated 11:00PM</span> -->
                     </div>
                    
-                    <div class="card_details">
-                        <div class="detail-item">
+                    <div class="card_details pc">
+                        <div class="detail_item">
                             <p class="item_title">매출</p>
                             <p class="item_value">99,440,000원</p>                            
                         </div>
-                        <div class="detail-item">
+                        <div class="detail_item">
                             <p class="item_title">비용</p>
                             <p class="item_value">1,440,000원</p>                            
                         </div>
-                        <div class="detail-item">
+                        <div class="detail_item">
                             <p class="item_title">손익</p>
                             <p class="item_value">99,440,000원</p>                            
+                        </div>
+                    </div>
+
+                    <div class="card_details mobile">
+                        <div class="detail_item">
+                            <p class="item_title">매출</p>
+                            <p class="item_value">99,440,000원</p>                            
+                        </div>
+                        <div class="detail_item">
+                            <div>
+                                <p class="item_title">비용</p>
+                                <p class="item_value">1,440,000원</p>
+                            </div>
+                            <div>
+                                <p class="item_title">손익</p>
+                                <p class="item_value">99,440,000원</p>
+                            </div>
                         </div>
                     </div>
                 </a>
