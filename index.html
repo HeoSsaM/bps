@@ -17,11 +17,11 @@
             <div class="top_inner">
                 <div class="top_nav_area">
                     <div class="store_link_area">
-                        <a href="javascript:;" class="store_link">브루클린트레일러 연남점</a>
+                        <a href="javascript:;" class="store_link" onclick="showStore()">브루클린트레일러 연남점</a>
                         <ul class="store_link_group">
-                            <li>브루클린트레일러 연남점</li>
-                            <li>브루클린트레일러 연남점</li>
-                            <li>브루클린트레일러 연남점</li>
+                            <li><a href="">브루클린트레일러 이대점</a></li>
+                            <li><a href="">브루클린트레일러 신촌점</a></li>
+                            <li><a href="">브루클린트레일러 홍대점</a></li>
                         </ul>
                     </div>
                     <a href="javascript:;" class="btn_menu"><img src="img/btn_menu.png" alt="전체보기"></a>
@@ -313,64 +313,154 @@
                 <!-- //review_board -->
 
                 <div class="card sec_best_menu">
-                    <a href="">
                         <div class="card_title">
                             <h2><img src="img/ico_best.png" alt="">BEST MENU</h2>
                             <span>Last Updated 11:00PM</span>
                         </div>
                         <div class="tab_area">
-                            <ul class="tab_menu">
-                                <li class="on">오늘</li>
-                                <li>온라인</li>
-                                <li>이번달</li>
+                            <ul class="tab_menu" id="bestMenu">
+                                <li class="on" data-tab="tab-1">오늘</li>
+                                <li data-tab="tab-2">온라인</li>
+                                <li data-tab="tab-3">이번달</li>
                             </ul>
-                            <div class="tab_contents today">
-                                <ul class="sub_tab_menu">
-                                    <li class="on">판매순위</li>
-                                    <li>홀주문</li>
-                                    <li>배달주문</li>
-                                    <li>포장주문</li>
-                                </ul>
-                                <ul class="sub_tab_contents">
-                                    <li>
-                                        <strong>1</strong>
-                                        <span class="menu">BEF 시그니처 핫도그</span>
-                                        <div>
-                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <strong>2</strong>
-                                        <span class="menu">칠리치즈 핫도그</span>
-                                        <div>
-                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <strong>3</strong>
-                                        <span class="menu">아메리칸 슈림프 치킨</span>
-                                        <div>
-                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <strong>4</strong>
-                                        <span class="menu">치킨 카레 소세지 보울</span>
-                                        <div>
-                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <strong>5</strong>
-                                        <span class="menu">BFT 오리지널 수제버거</span>
-                                        <div>
-                                            <span class="price">2,400,000원 <span class="count">100건</span></span>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div id="bestMenuContents">
+                                <div class="tab_contents on" id="tab-1">
+                                    <ul class="sub_tab_menu" id="bestMenu">
+                                        <li class="active">판매순위</li>
+                                        <li>홀주문</li>
+                                        <li>배달주문</li>
+                                        <li>포장주문</li>
+                                    </ul>
+                                    <ul class="sub_tab_contents">
+                                        <li>
+                                            <strong>1</strong>
+                                            <span class="menu">BEF 시그니처 핫도그</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>2</strong>
+                                            <span class="menu">칠리치즈 핫도그</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>3</strong>
+                                            <span class="menu">아메리칸 슈림프 치킨</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>4</strong>
+                                            <span class="menu">치킨 카레 소세지 보울</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>5</strong>
+                                            <span class="menu">BFT 오리지널 수제버거</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab_contents" id="tab-2">
+                                    <ul class="sub_tab_menu">
+                                        <li>판매순위</li>
+                                        <li class="active">홀주문</li>
+                                        <li>배달주문</li>
+                                        <li>포장주문</li>
+                                    </ul>
+                                    <ul class="sub_tab_contents">
+                                        <li>
+                                            <strong>1</strong>
+                                            <span class="menu">BEF 시그니처 핫도그</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>2</strong>
+                                            <span class="menu">칠리치즈 핫도그</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>3</strong>
+                                            <span class="menu">아메리칸 슈림프 치킨</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>4</strong>
+                                            <span class="menu">치킨 카레 소세지 보울</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>5</strong>
+                                            <span class="menu">BFT 오리지널 수제버거</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab_contents" id="tab-3">
+                                    <ul class="sub_tab_menu">
+                                        <li>판매순위</li>
+                                        <li>홀주문</li>
+                                        <li class="active">배달주문</li>
+                                        <li>포장주문</li>
+                                    </ul>
+                                    <ul class="sub_tab_contents">
+                                        <li>
+                                            <strong>1</strong>
+                                            <span class="menu">BEF 시그니처 핫도그</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>2</strong>
+                                            <span class="menu">칠리치즈 핫도그</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>3</strong>
+                                            <span class="menu">아메리칸 슈림프 치킨</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>4</strong>
+                                            <span class="menu">치킨 카레 소세지 보울</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>5</strong>
+                                            <span class="menu">BFT 오리지널 수제버거</span>
+                                            <div>
+                                                <span class="price">2,400,000원 <span class="count">100건</span></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </a>
                 </div>
                 <!-- //best_menu -->
             </div>
