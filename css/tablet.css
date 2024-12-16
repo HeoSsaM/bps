@@ -63,6 +63,15 @@ body {
 /* 챗봇 센터 */
 .chatbot_slider .swiper-slide {
     height: 8.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.chatbot_slider .slider_text .chatbot_text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     text-align: right; 

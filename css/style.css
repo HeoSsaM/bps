@@ -345,15 +345,27 @@ body {
     height: 9.38rem;
     overflow: hidden;
     background: url(../img/img_chatbot_banner_bg.png) no-repeat center / cover;
-    margin-bottom: 1.25rem;
 }
 .chatbot_slider .swiper-slide {   
-    padding: 2.4rem    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .chatbot_slider .slider_text {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 85%;
+}
+.chatbot_slider .slider_text .chatbot_icon {
+    width: 30%;
+    text-align: center;
+}
+.chatbot_slider .slider_text .chatbot_text {
+    width: 65%;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
 }
 .swiper-pagination-bullet {
     background: var(--color-white);
@@ -518,7 +530,7 @@ body {
 .sec_sales_profit .detail_item {
     padding: 20px 12px;
 }
-.sec_sales_profit .detail_item>.item_value {
+.sec_sales_profit .detail_item .item_value {
     color: #202125;
     font-weight: 600;
     letter-spacing: -0.01em;
