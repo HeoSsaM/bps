@@ -277,9 +277,10 @@ body {
 .card_details>div+div::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
     width: 1px;
-    height: 75px;
+    height: 53px;
     background: #DCDCDC;
 }
 .card_details .detail_item {
@@ -341,28 +342,18 @@ body {
 .chatbot_slider {
     width: 100%;
     border-radius: 20px;
+    height: 9.38rem;
     overflow: hidden;
+    background: url(../img/img_chatbot_banner_bg.png) no-repeat center / cover;
+    margin-bottom: 1.25rem;
 }
-.chatbot_slider .swiper-slide {
+.chatbot_slider .swiper-slide {   
+    padding: 2.4rem    
+}
+.chatbot_slider .slider_text {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 9.38rem;
-    padding: 1.25rem 2.5rem 3.2rem;
-    background: url(../img/img_chatbot_banner_bg.png) no-repeat center / cover;
-    /* 비율 유지 및 채움 */
-}
-.chatbot_slider .chatbot_icon {width: 18%;}
-.chatbot_icon img {max-width: 100%;}
-.chatbot_slider .chatbot_text {
-    width: 78%;
-    line-height: 1.3;
-    color: #fff;
-    margin-left: 1.25rem;
-    font-size: 1.125rem;
-    font-weight: 500;
-    letter-spacing: -1px;
 }
 .swiper-pagination-bullet {
     background: var(--color-white);
@@ -398,10 +389,9 @@ body {
 /* 리뷰 알림 영역 */
 .new_review_list li {
     position: relative;
-    padding: 0 0 0.625rem 2.4rem;        
+    padding: 1rem 0 1rem 2.4rem;        
 }
 .new_review_list li + li {
-    padding-top: 0.625rem;
     border-top: 1px solid #E7E7EB;
 }
 .new_review_list li::before {
@@ -502,7 +492,7 @@ body {
 
 /* 매출비용분석 */
 .sec_sales_cost .card_title {
-    margin-bottom: 1.3rem;
+    margin-bottom: 0.8rem;
 }
 .sec_sales_cost .detail_item {
     padding: 1.25rem;
@@ -519,12 +509,17 @@ body {
 }
 
 /* 매출손익분석 */
+.sec_sales_profit .card_title {
+    margin-bottom: 1.5rem;
+}
 .sec_sales_profit .card_details.mobile {
     display: none;
 }
-.sec_sales_profit .item_value {
+.sec_sales_profit .detail_item {
+    padding: 20px 12px;
+}
+.sec_sales_profit .detail_item>.item_value {
     color: #202125;
-    font-size: 16px;
     font-weight: 600;
     letter-spacing: -0.01em;
     text-align: center;
