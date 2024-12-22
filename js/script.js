@@ -5,12 +5,7 @@ var swiper = new Swiper(".chatbot_slider", {
     },
   });
 
-  //지점
-  const $store_list = document.querySelector('.store_link_group');
-
-  function showStore() {
-    $store_list?.classList.toggle('on');
-  }
+  
 
   //bestMenu tab
     const tabMenuItems = document.querySelectorAll("#bestMenu > li"); // 탭 메뉴 항목

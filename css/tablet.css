@@ -117,26 +117,26 @@ body {
 
 /* 매출손익 */
 .row03 .sec_sales_profit {
-    height: auto;
+    height: 14.25rem;
+    justify-content: space-between;
 }
 .sec_sales_profit .card_details.pc {
     display: none;
 }
 .sec_sales_profit .card_details.mobile {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 4px;  
     background: none;
 }
-.sec_sales_profit .card_details {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;    
-}
+
 .sec_sales_profit .detail_item {
     border-radius: 16px;
-    height: 74px;
+    height: 4.62rem;
     box-sizing: border-box;
     background: #F2F6F5;
+    padding: 0.714rem;
 }
 .sec_sales_profit .card_details>div+div::before {
     background: none;

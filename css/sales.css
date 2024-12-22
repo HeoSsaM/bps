@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+/* common */
+#wrap img {
+    display: initial;
+    vertical-align: middle;
+}
+
+.inner {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    padding-top: 24px;
+    background: #fff;
+}
+
+.header .top_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    padding: 0 1.25rem;
+    border-bottom: 1px solid rgba(233, 237, 236, 1)
+}
+
+.header .top_inner img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.store_link_area {
+    position: relative;
+    color: #191A1E;
+    font-weight: 500;
+}
+
+.store_link_area>a {
+    position: static;
+    display: block;
+    width: 11.43rem;
+    height: auto;
+    letter-spacing: -1%;
+    background: none;
+}
+
+.store_link_area>.store_link_group {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 10rem;
+    line-height: 3em;
+    background: #fff;
+    padding: 8px 16px;
+    border: 1px solid #E9EDEC;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    display: none;
+}
+
+.store_link_area>.store_link_group.on {
+    display: block;
+}
+
+.btn_menu {
+    margin-left: 1.5rem;
+}
+
+/* nav area */
+.nav_area {
+    background: #fff;
+    border-bottom: 1px solid #D3D8D7
+}
+
+.nav_area .nav_inner {
+    max-width: 57.5rem;
+    margin: 0 auto;
+    padding-top: 1.25rem;
+}
+
+.nav_inner h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 31.68px;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.312rem;
+}
+
+.nav_inner .gnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav_inner .gnb>li>a {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    line-height: 21.12px;
+    letter-spacing: -0.01em;
+    color: #3C4048
+}
+
+.nav_inner .gnb>li.on>a {
+    color: #23D26B;
+    border-bottom: 4px solid #23D26B
+}
+
+/* container */
+.container {
+    max-width: 57.5rem;
+    margin: 0 auto;
+}
+
+.sales_button_area {
+    position: relative;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 4.25rem;
+}
+
+.sales_button_area .sales_button button {
+    width: 8.5rem;
+    height: 2.25rem;
+    line-height: 21.12px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #D3D8D7;
+    font-weight: 500;
+    color: #191A1E;
+}
+
+.sales_button_area .sales_button button.on {
+    border-color: #3C4048;
+    background: #fff;
+}
+
+.sales_button_area .date_update {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 15.84px;
+    text-align: right;
+    color: #9B9EA3;
+}
+
+/* card */
+.container .card {
+    width: 100%;    
+    padding: 1.25rem 1rem 1rem;
+    gap: 1rem;
+    border-radius: 20px;
+    border: 1px solid #E9EDEC;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1rem;
+}
+
+.card .w100 {
+    display: block;
+}
+.amount.mb16 {
+    margin-bottom: 1rem;
+}
+
+/* 실시간판매카드 높이 */
+.card.realtime {
+    height: 9.31rem;
+}
+/* 매장카드 높이 */
+.card.store {
+    height: 17.25rem;
+}
+/* 배달 카드 높이 */
+.card.delivery {
+    height: 24.43rem;
+}
+/* 실시간차트높이 */
+.card.chart {
+    height: 25.625rem;
+}
+.container .card h3 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 23.76px;
+    color: #3C4048;
+    padding: 0 4px;
+    margin-bottom: 1rem;
+}
+
+.card_value {
+    display: flex;
+    justify-content: space-between;    
+    height: 4.06rem;
+}
+
+.card_value .amount {
+    width: 15.25rem;
+    padding-left: 1rem;
+}
+
+.card_value .amount .amount_value {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 36.96px;
+    letter-spacing: -0.01em;
+    height: 37px;
+}
+
+.card_value .amount_info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 15.25rem
+}
+
+.card_value .amount_info .amount_detail {
+    font-weight: 500;
+    line-height: 21.12px;
+    letter-spacing: -0.01em;
+    color: #3C4048;
+    display: flex;
+    gap: 8px;
+}
+.card_value .amount_info .percent {
+    font-weight: 500;
+    line-height: 21.12px;
+    letter-spacing: -0.01em;    
+    font-weight: 500;
+    font-size: 1rem;
+}
+.amount_info .percent.plus {
+    color: #EB3A3A
+}
+.amount_info .percent.minus {
+    color: #3D5AF1
+}
+/* 막대 그래프 스타일 */
+.bar_chart {
+    width: 26.75rem;
+}
+
+.chart_labels {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    line-height: 21.12px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+    color: #1B2D48;
+}
+
+.chart_bar {
+    display: flex;
+    height: 24px;
+    background: #E9EDEC;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar {
+    width: 50%;
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.retail_bar {
+    background: #23D26B;
+}
+
+.delivery_bar {
+    background: #1B2D48;
+}
+
+/* chart */
+.chart_title {
+    display: flex;
+    justify-content: space-between;
+}
+.card.chart .btn_filter {
+    width: 5.25rem;
+    height: 2.25rem;
+    padding: 6px 12px 6px 12px;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #D3D8D7
+}
+.card.chart .btn_filter > span {
+    color: #3C4048
+}
+
+/* 카드 하단 내부 박스 */
+.bottom_box {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.bottom_box > div {
+    flex: 1;
+    max-width: calc((100% - 16px) / 2);
+    height: 6.9375rem;
+    padding: 1rem 1.25rem;
+    border-radius: 15px;
+    background: #F6F9F8;
+}
+/* 2단 */
+.bottom_box.h2 {
+    flex-wrap: wrap;   
+    gap: 0;
+    row-gap: 1rem;
+}
+.bottom_box.h2 > div {
+    flex: 1 1 calc((100% - 16px) / 2); /* 카드의 너비 계산 */
+  max-width: calc((100% - 16px) / 2); /* 카드의 최대 너비 */
+    height: 6.56rem;
+}
+.bottom_box .section .sec_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.5rem;
+    margin-bottom: 8px;
+}
+.bottom_box .section .sec_title img {
+    margin-right: 4px;
+}
+.sec_title {
+    font-weight: 500;
+    line-height: 21.12px;
+    letter-spacing: -0.01em;
+    color:#3C4048;
+    margin-bottom: 8px;
+}
+.bottom_box .percent {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 23.76px;
+    text-align: right;
+    color: #46556B;
+}
+.bottom_box .percent.plus,
+.bottom_box .percent.minus {
+    font-size: 0.81rem;
+}
+.bottom_box .percent.green {
+    color: #00BC4E;
+}
+.percent_value.gray {
+    color: #9B9EA3;
+    font-weight: 500;
+}
+.bottom_box .amount .amount_value {  
+    font-size: 1rem; 
+    font-weight: 500;
+    line-height: 21.12px;
+    letter-spacing: -0.01em;
+    color: #191A1E;
+    height: 1.31rem;
+}
+.bottom_box .amount_info {
+    /* width: 11.8rem; */
+    gap: 4px;
+}
+.bottom_box .amount_info .amount_detail {
+    font-size: 0.81rem;
+    font-weight: 400;
+    line-height: 17.16px;
+    color: #3C4048;
+}
+
+/* 주문이력 */
+.order_history .order_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    height: 2.25rem;
+    margin-bottom: 1rem;
+    font-size: 1.125;
+    font-weight: 500;
+    line-height: 23.76px;
+    color:#3C4048;
+}
+.order_history .order_title h3 > span {
+    color: #00BC4E;
+    margin-left: 5px;
+}
+.order_history > div {
+    margin-bottom: 1rem;    
+}
+.order_list .order_category,
+.order_list .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order_list .order_category {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 18.48px;
+    color: #9B9EA3;
+    height: 21px;
+    margin-bottom: 4px;
+}
+.order_list .menu {
+    font-weight: 600;
+    line-height: 21.12px;
+    letter-spacing: -0.01em;
+    color: #3C4048;
+    height: 21px;
+}

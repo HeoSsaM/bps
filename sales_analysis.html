@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>판매분석</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sales.css">
+    <link rel="stylesheet" href="css/sale_tablet.css" media="(min-width: 640px) and (max-width: 951px)">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header sales">
+            <div class="inner">
+                <div class="top_inner">
+                    <div class="store_link_area">
+                        <a href="#" class="store_link" onclick="showStore()">브루클린트레일러 연남점 <span><img
+                                    src="img/ico_listDown_b.png" alt=""></span>
+                        </a>
+                        <ul class="store_link_group">
+                            <li><a href="">강남점</a></li>
+                            <li><a href="">구미점</a></li>
+                            <li><a href="">종로점</a></li>
+                            <li><a href="">사당점</a></li>
+                        </ul>
+                    </div>
+                    <div class="util_area">
+                        <a href="jascript:;" class="btn_alarm">
+                            <img src="img/ico_alam.png" alt="알림">
+                        </a>
+                        <a href="javascript:;" class="btn_menu">
+                            <img src="img/btn_menu_b.png" alt="전체보기">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //top_header -->
+
+        <div class="nav_area">
+            <div class="nav_inner">
+                <h2>마케팅센터</h2>
+                <ul class="gnb">
+                    <li class="on"><a href="#">판매 분석</a></li>
+                    <li><a href="#">고객 분석</a></li>
+                    <li><a href="#">광고효율분석</a></li>
+                    <li><a href="#">베스트메뉴</a></li>
+                    <li><a href="#">리뷰 분석</a></li>
+                    <li><a href="#">비용 분석</a></li>
+                    <li><a href="#">손익 분석</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //nav_area -->
+
+        <div class="container">
+            <div class="sales_button_area">
+                <div class="sales_button">
+                    <button class="btn_realtime on">실시간 판매</button>
+                    <button class="btn_channel">채널별 판매추이</button>
+                </div>
+                <div class="date_picker">
+                    <span>2024년 10월 30일 (토)</span>
+                    <button class="dropdown-button"><img src="img/icon_down_arrow.png" alt=""></button>
+                </div>
+                <div class="date_update">
+                    15:00 업데이트
+                </div>
+            </div>
+            <!-- //sales_button_area -->
+
+            <div class="card realtime">
+                <h3><img src="img/ico_money.png" alt=""> 실시간 판매금액</h3>
+
+                <!-- 금액 및 정보 영역 -->
+                <div class="card_value">
+                    <div class="amount">
+                        <span class="amount_value">6,500,000원</span>
+                        <div class="amount_info">
+                            <div class="amount_detail">
+                                <em class="units">350<span>건 </span></em>
+                                 · <span> 객<em> 25,000</em>원</span>
+                            </div>
+                            <div class="percent plus">
+                                <span class="percentage_value">120%</span>
+                                <span class="arrow-up"><img src="img/ico_up.png" alt="증가"></span>
+                            </div>
+                            <span class="tootip"><img src="img/ico_tooltip.png" alt="도움말"></span>
+                        </div>
+                    </div>
+
+                    <!-- chart -->
+                    <div class="bar_chart">
+                        <!-- 레이블 -->
+                        <div class="chart_labels">
+                            <span class="label retail_label">매장 <strong>0%</strong></span>
+                            <span class="label delivery_label">0% 배달</span>
+                        </div>
+                        <!-- 막대 그래프 -->
+                        <div class="chart_bar">
+                            <div class="bar retail_bar"></div>
+                            <div class="bar delivery_bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //실시간 판매금액 -->
+
+            
+            <div class="card store">
+                <h3><img src="img/filled.png" alt=""> 매장</h3>
+
+                <!-- 금액 및 정보 영역 -->
+                <div class="card_value w100">
+                    <div class="amount mb16">
+                        <span class="amount_value">4,500,000원</span>
+                        <div class="amount_info">
+                            <div class="amount_detail">
+                                <em class="units">200<span> 건 </span></em>
+                                 · <span> 객<em> 25,000</em>원</span>
+                            </div>
+                            <div class="percent plus">
+                                <span class="percentage_value">120%</span>
+                                <span class="arrow-up"><img src="img/ico_up.png" alt="증가"></span>
+                            </div>
+                            <span class="tootip"><img src="img/ico_tooltip.png" alt="도움말"></span>
+                        </div>
+                    </div>
+
+                    <!-- 섹션 -->
+                    <div class="bottom_box">
+                        <div class="section left">
+                            <div class="sec_title">
+                                <div class="title">
+                                    <img src="img/ico_hall.png" alt="">
+                                    <span>홀</span>
+                                </div>
+                                <span class="percent green">50%</span>
+                            </div>
+                            <div class="amount">
+                                <span class="amount_value">3,700,000원</span>
+                                <div class="amount_info">
+                                    <div class="amount_detail">
+                                        <em class="units">200<span> 건 </span></em>
+                                       · <span> 객<em> 25,000</em>원</span>
+                                    </div>
+                                    <div class="percent plus">
+                                        <span class="percentage_value">140%</span>
+                                        <span class="arrow-up"><img src="img/ico_up.png" alt="증가"></span>
+                                    </div>
+                                    <span class="tootip"><img src="img/ico_tooltip.png" alt="도움말"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section right">
+                            <div class="sec_title">
+                                <div class="title">
+                                    <img src="img/ico_packing.png" alt="">
+                                    <span>포장</span>
+                                </div>
+                                <span class="percent green">20%</span>
+                            </div>
+                            <div class="amount">
+                                <span class="amount_value">800,000원</span>
+                                <div class="amount_info">
+                                    <div class="amount_detail">
+                                        <em class="units">200<span> 건 </span></em>
+                                        · <span>객<em> 25,000</em>원</span>
+                                    </div>
+                                    <div class="percent minus">
+                                        <span class="percentage_value">20%</span>
+                                        <span class="arrow-up"><img src="img/ico_down.png" alt="감소"></span>
+                                    </div>
+                                    <span class="tootip"><img src="img/ico_tooltip.png" alt="도움말"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- //매장 -->
+
+            <div class="card delivery">
+                <h3><img src="img/ico_delivery.png" alt=""> 배달</h3>
+
+                <!-- 금액 및 정보 영역 -->
+                <div class="card_value w100">
+                    <div class="amount mb16">
+                        <span class="amount_value">2,000,000원</span>
+                        <div class="amount_info">
+                            <div class="amount_detail">
+                                <em class="units">200<span> 건 </span></em>
+                                 · <span> 객<em> 25,000</em>원</span>
+                            </div>
+                            <div class="percent">
+                                <span class="percent_value gray">- 0%</span>
+                                <!-- <span class="arrow-up"><img src="img/ico_up.png" alt="증가"></span> -->
+                            </div>
+                            <span class="tootip"><img src="img/ico_tooltip.png" alt="도움말"></span>
+                        </div>
+                    </div>
+
+                    <!-- 섹션 -->
+                    <div class="bottom_box h2">
+                        <div class="section left">
+                            <div class="sec_title">
+                                <div class="title">
+                                    <img src="img/filled_baemin.png" alt="">
+                                    <span>배달의 민족</span>
+                                </div>
+                                <span class="percent green">50%</span>
+                            </div>
+                            <div class="amount">
+                                <span class="amount_value">1,000,000원</span>
+                                <div class="amount_info">
+                                    <div class="amount_detail">
+                                        <em class="units">200<span> 건 </span></em>
+                                       · <span> 객<em> 25,000</em>원</span>
+                                    </div>
+                                    <div class="percent plus">
+                                        <span class="percentage_value">120%</span>
+                                        <span class="arrow-up"><img src="img/ico_up.png" alt="증가"></span>
+                                    </div>
+                                    <span class="tootip"><img src="img/ico_tooltip.png" alt="도움말"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section right">
+                            <div class="sec_title">
+                                <div class="title">
+                                    <img src="img/filled_yogiyo.png" alt="">
+                                    <span>요기요</span>
+                                </div>
+                                <span class="percent green">20%</span>
+                            </div>
+                            <div class="amount">
+                                <span class="amount_value">600,000원</span>
+                                <div class="amount_info">
+                                    <div class="amount_detail">
+                                        <em class="units">200<span> 건 </span></em>
+                                        · <span>객<em> 25,000</em>원</span>
+                                    </div>
+                                    <div class="percent">
+                                        <span class="percent_value gray">- 0%</span>
+                                        <!-- <span class="arrow-up"><img src="img/ico_down.png" alt="감소"></span> -->
+                                    </div>
+                                    <span class="tootip"><img src="img/ico_tooltip.png" alt="도움말"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section left">
+                            <div class="sec_title">
+                                <div class="title">
+                                    <img src="img/filled_coupang.png" alt="">
+                                    <span>쿠팡이츠</span>
+                                </div>
+                                <span class="percent green">30%</span>
+                            </div>
+                            <div class="amount">
+                                <span class="amount_value">400,000원</span>
+                                <div class="amount_info">
+                                    <div class="amount_detail">
+                                        <em class="units">200<span> 건 </span></em>
+                                       · <span> 객<em> 25,000</em>원</span>
+                                    </div>
+                                    <div class="percent minus">
+                                        <span class="percentage_value">20%</span>
+                                        <span class="arrow_down"><img src="img/ico_down.png" alt="감소"></span>
+                                    </div>
+                                    <span class="tootip"><img src="img/ico_tooltip.png" alt="도움말"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section right">
+                            <!-- <div class="sec_title">
+                                <div class="title">
+                                    <img src="img/filled_yogiyo.png" alt="">
+                                    <span>요기요</span>
+                                </div>
+                                <span class="percent green">20%</span>
+                            </div>
+                            <div class="amount">
+                                <span class="amount_value">600,000원</span>
+                                <div class="amount_info">
+                                    <div class="amount_detail">
+                                        <em class="units">200<span> 건 </span></em>
+                                        · <span>객<em> 25,000</em>원</span>
+                                    </div>
+                                    <div class="percent">
+                                        <span class="percentage_value gray">0%</span>
+                                         <span class="arrow-up"><img src="img/ico_down.png" alt="감소"></span> 
+                                    </div>
+                                    <span class="tootip"><img src="img/ico_tooltip.png" alt="도움말"></span>
+                                </div>
+                            </div> -->
+                        </div>                        
+                    </div>                    
+                </div>
+            </div>
+            <!-- //배달 -->
+
+            <div class="card chart">
+                <div class="chart_title">
+                    <h3>실시간 차트</h3>
+                    <button class="btn_filter">
+                        <img src="img/ico_filter.png" alt="">
+                        <span>필터</span>
+                    </button>
+                </div>                
+            </div>
+            <!-- //chart -->
+
+            <div class="order_history">
+                <div class="order_title">
+                    <h3>주문이력 <span>5</span></h3>
+                    <button>최신순 <img src="img/icon_down_arrow.png" alt="펼쳐보기"></button>
+                </div>
+                <div class="card order_list">
+                    <div class="order_category">
+                        <span class="cate_name">매장 - 홀</span>
+                        <span class="time">오전 11:31</span>
+                    </div>
+                    <div class="menu">
+                        <strong>치즈버거 외 3건</strong>
+                        <strong>48,000 <span>원</span></strong>
+                    </div>
+                </div>
+                <div class="card order_list">
+                    <div class="order_category">
+                        <span class="cate_name">배달 - 요기요</span>
+                        <span class="time">오전 11:31</span>
+                    </div>
+                    <div class="menu">
+                        <strong>치폴레 버거 외 2 건</strong>
+                        <strong>47,000 <span>원</span></strong>
+                    </div>
+                </div>
+                <div class="card order_list">
+                    <div class="order_category">
+                        <span class="cate_name">배달 - 요기요</span>
+                        <span class="time">오전 11:31</span>
+                    </div>
+                    <div class="menu">
+                        <strong>치폴레 버거 외 2 건</strong>
+                        <strong>38,000 <span>원</span></strong>
+                    </div>
+                </div>
+                <div class="card order_list">
+                    <div class="order_category">
+                        <span class="cate_name">매장 - 홀</span>
+                        <span class="time">오전 11:31</span>
+                    </div>
+                    <div class="menu">
+                        <strong>치즈버거 외 3건</strong>
+                        <strong>48,000 <span>원</span></strong>
+                    </div>
+                </div>
+                <div class="card order_list">
+                    <div class="order_category">
+                        <span class="cate_name">배달 - 배달의 민족</span>
+                        <span class="time">오전 11:31</span>
+                    </div>
+                    <div class="menu">
+                        <strong>치즈버거 외 3 건</strong>
+                        <strong>28,000 <span>원</span></strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- //CONTAINER -->
+
+
+    </div>
+    <script src="js/sales.js"></script>
+</body>
+
+</html>
